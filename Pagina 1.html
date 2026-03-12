@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Problema 11</title>
+</head>
+<body>
+    <h2>Convertire ani</h2>
+    <input style="width: 150px" type="number" id="numar" min="0" placeholder="Introduceti anii">
+    <button onclick="a()">Afisare</button>
+    <p id="afisare"></p>
+    <script>
+        function a() 
+        {
+            let ani = document.getElementById("numar").value;
+            let l = ani * 12;
+            let z = ani * 365;
+            let o = z * 24;
+            document.getElementById("afisare").innerHTML = `${l} luni<br> ${z} zile<br> ${o} ore`;
+        }
+    </script>
+</body>
+</html>

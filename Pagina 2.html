@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Problema 10</title>
+</head>
+<body>
+    <h2>Tabla inmultirii</h2>
+    <input style="width: 150px" type="number" id="numar" min="1" max="10" placeholder="Introduceti n">
+    <button onclick="a()">Afisare</button>
+    <p id="afisare"></p>
+    <script>
+        function a() 
+        {
+            let n = document.getElementById("numar").value;
+            let a ="";
+            for (let i = 1; i <= 10; i++) {
+                a += `${i} x ${n} = ${i * n}<br>`;
+            }
+            document.getElementById("afisare").innerHTML = a;
+        }
+    </script>
+</body>
+</html>
