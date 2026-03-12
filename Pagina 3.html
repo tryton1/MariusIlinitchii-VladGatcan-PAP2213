@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <title>Problema 12</title>
+</head>
+<body>
+    <h2>Inversare Numere</h2>
+    <input style="width: 150px" type="number" id="a"  placeholder="Introduceti a">
+    <input style="width: 150px" type="number" id="b"  placeholder="Introduceti b">
+    <button onclick="a()">Afisare</button>
+    <p id="afisare"></p>
+    <script>
+        function a() 
+        {
+            let a = document.getElementById("a").value;
+            let b = document.getElementById("b").value;
+            let t = a;
+            a = b;
+            b = t;
+            document.getElementById("afisare").innerHTML = `a = ${a}<br> b = ${b}`;
+        }
+    </script>
+</body>
+</html>
